@@ -1,4 +1,6 @@
-﻿namespace AppTest;
+﻿using AppTest.ViewModel;
+
+namespace AppTest;
 
 public static class MauiProgram
 {
@@ -13,6 +15,9 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+		builder.Services.AddSingleton<TodoListViewModel>();
+		builder.Services.AddSingleton<MainPage>();
+
+        return builder.Build();
 	}
 }
