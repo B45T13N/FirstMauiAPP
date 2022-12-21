@@ -1,4 +1,5 @@
-﻿using AppTest.ViewModel;
+﻿using AppTest.View;
+using AppTest.ViewModel;
 
 namespace AppTest;
 
@@ -17,6 +18,9 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<TodoListViewModel>();
 		builder.Services.AddSingleton<MainPage>();
+		
+		builder.Services.AddSingleton<AddTodoViewModel>();
+		builder.Services.AddSingleton<AddTodoPage>();
 
         return builder.Build();
 	}

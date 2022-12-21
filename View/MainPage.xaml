@@ -6,7 +6,17 @@
              x:Class="AppTest.View.MainPage">
 
     <ScrollView>
-        
+        <VerticalStackLayout>
+            <Label 
+                Text="You can find here your todos :"
+                HorizontalOptions="Center"
+                Margin="30 0 0 0"/>
+            <Frame 
+                BackgroundColor="Grey"
+                />
+            <Frame
+                />
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>

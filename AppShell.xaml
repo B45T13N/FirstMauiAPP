@@ -12,6 +12,11 @@
         ContentTemplate="{DataTemplate view:MainPage}"
         Route="MainPage" />
 
+        <ShellContent
+        Title="Add Todo"
+        ContentTemplate="{DataTemplate view:AddTodoPage}"
+        Route="AddTodoPage" />
+
     </TabBar>
 
 </Shell>
